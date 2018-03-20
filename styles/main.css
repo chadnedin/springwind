@@ -1,0 +1,379 @@
+/*Styles for Term Project */
+
+/* Name: Chad Nedin
+   Date: 11/03/2015
+   filename: main.css
+   */
+
+#map {
+	position: relative;
+	
+	height: 600px
+}
+#directions	{
+	width: 300px;
+	height: 600px;
+	float: left;
+	overflow: auto;
+}
+#message {
+	position: absolute;
+	padding: 10px;
+	background: white;
+	border: 2px black solid;
+	border-radius: 10px;
+}
+
+
+/* css for employees table */
+#employees{
+	padding-top: 10px;
+	width: 600px;
+	height: 600px;
+}
+.table-responsive {
+	font-size: 80%;
+}
+
+#employees table, th, td {
+    border: 1px solid black;
+}
+#FirstCol {
+	font-weight: bold;
+}
+
+/* css for abouts section */
+#abouts h2 {
+	padding-left: 20px;
+	background: url(../images/plus.png) no-repeat;
+}
+#abouts h2.minus {
+	background: url(../images/minus.png) no-repeat;
+}
+#abouts a {
+    color: #86D47D;
+    text-decoration: none; 
+}
+#abouts a:focus, a:hover {
+	color: grey;
+}
+#abouts div {
+	display: none;
+}
+
+#abouts p {
+	padding-bottom: .25em;
+	padding-left: 25px;
+}
+
+
+/* the styles for the carousel */
+
+
+.button_panel	{
+	height: 125px;
+	padding: 50px 15px;
+	float: left;
+}
+.button_panel img {
+	width: 25px;
+	height: 25px;
+}
+#display_panel {
+	overflow: hidden;
+	float: left;			
+	height: 125px;
+}
+#image_list {
+	position: relative;	
+	left: 0px;
+    width: 900px;
+    list-style: none;  
+}
+#image_list li	{
+	float: left;
+	width: 100px;
+}
+#image_list li img	{
+	width: 95px;
+	
+}
+#image {
+	height: 250px;
+	margin-bottom: 1em;	
+	
+}
+/* That Main NavBar */
+#mains {
+	max-width:900px;
+	margin:0 auto;
+	padding:50px 30px;
+}
+.navi ul {
+	height:40px; 
+	padding:0 10px 0 0;
+	background:#2e8b6b;
+	border-radius:4px;
+	margin:0 0 0 0;
+}
+.navi ul li {
+	float:left;
+	list-style:none;		 
+	border-right:1px solid #1e7759;
+	padding:10px 20px 10px 20px;
+}
+.navi ul li:first-child{
+	padding-left:50px;
+	border-radius:4px 0 0 4px;
+}
+.navi ul li:hover {
+	background:#47987c;
+}
+.navi ul li a {
+	color:#fff;
+	font-size:12px;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000
+}
+.navi ul li a:hover{		 
+	text-decoration:underline;
+}
+.hidden {
+	display:none;
+}
+
+.mini-navi {
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	padding:0 0 0 0;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:0 0 8px 8px;
+}
+.mini-navi ul {
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+}
+.mini-navi ul li {
+	margin:0 0 0 0;
+	padding:10px 18px 12px 23px;
+	list-style:none;
+	border-bottom:1px solid #ebebeb;
+}
+.mini-navi ul li:hover {
+	background:#f6f6f6;
+}
+.mini-navigation ul li a {
+	text-decoration:none;
+	font-size:12px;
+	color:#1e7759;
+}
+.mini-navi ul li a:hover {
+	text-decoration:underline;
+}
+.mini-navi ul li:last-child{
+	border-bottom:none;
+	padding-bottom:15px;
+}
+.mini-navi ul li:last-child:hover {
+	border-radius:0 0 8px 8px;
+}
+
+@media (max-width: 796px) {
+	 .navi.responsive ul li {
+		display:none;
+	 }
+	 .navi.responsive ul li.hidden {
+		display:block;
+	 }
+	 .navi.responsive ul li.hidden:hover {
+		border-radius:4px 0 0 4px;
+	 }
+	 .navi.responsive ul li.hidden a{
+		background:url('../images/menu.png')no-repeat 0 -5px;
+		padding-left:24px;
+	}
+	
+}
+
+/* */
+
+.row-centered {
+    text-align:center;
+}
+
+
+.panel {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.jumbotron {
+	 background: url('../images/SWLOGO.PNg') no-repeat center center;
+  margin-bottom: 0px;
+  height: 300px;  
+
+}
+.jumbotron h1 a {
+	color: #404040;
+}
+#title {
+	
+	font-weight: bold;
+	display: block;
+	vertical-align: baseline;
+	text-decoration: none;	
+}
+ a:link {
+    text-decoration: none;
+}
+
+ a:visited {
+    text-decoration: none;
+}
+
+ a:hover {
+    
+}
+
+/* css for the HTML and basic body of the page */
+html {
+	
+	background-color: #00140A;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	
+}
+   
+/* added transparent effect to the panel container */
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: transparent;
+	padding-top: 20px;
+}
+
+
+#locations img {
+	border-top-right-radius: 40px 30px;
+	border-bottom-right-radius: 40px 30px;
+}
+
+/* Header */
+header img { 
+	position: absolute;
+} 
+
+header h1 a {
+	font-size: 200%;
+	font-style: italic;
+	color: green;
+	text-indent: 120px;
+	
+	
+}
+header h2 {
+	font-size: 200%;
+	text-indent: 90px;
+}
+header {
+	
+	padding: 10px 10px 0px 10px;
+}
+
+
+/* Section */
+section img {
+	border-radius: 1em;
+}
+
+section h1 { 
+	font-size: 125%;
+}
+section h1:first-letter { 
+	font-size: 250%;
+}
+section h2 {
+	font-size: 120%;
+}
+section h3 {
+	font-size: 120%;
+	
+}
+
+/* css products page */
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-left:-4px;
+	margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
+
+#ProductImage {
+	margin: 0 auto;
+}
+#productListing {
+display: inline-block;
+list-style: none;
+}
+
+/* css UI transitions */
+
+.elemClass {
+	text-align: center;
+   position: relative;
+   height: 80px;
+   background-color: transparent;
+}
+.myClass {
+   font-size: 40px; background-color: #00140A; color: white;
+}
+
+
+/* email form */
+
+label {
+	float: left;
+    width: 12em;
+    text-align: right;
+}
+input {
+    width: 12em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+span {
+	color: red;
+}
+#join, #reset {
+	width: 7.5em;
+}
+label.error {
+	float: none;
+	color: red;
+	font-size: 87.5%;
+	margin-left: .5em;
+}
+/* Email Join Page */
+#catFan {
+	margin: 0 auto;
+}
+/* Footer */
+footer {
+	font-size: 80%;
+	text-align: center;
+	background-color: #00140A;
+	color: white;
+	clear: both;
+	padding: 7px 0px 7px 0px;
+}
